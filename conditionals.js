@@ -8,24 +8,36 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 // 1. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 groter dan 20?" in op        // geeft false wanneer gelogd
 // ==========================================
-
+const isIt1 = 10 > 20;
+console.log('Is 10 groter dan 20?', isIt1);
 
 // ==========================================
 // 2. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 ongelijk aan 11?" in op        // geeft true wanneer gelogd
 // ==========================================
+const isIt2 = 10 !== 20;
+console.log('Is 10 ongelijk aan 11?', isIt2);
 
 
 // ==========================================
 // 3. Declareer een variabele en sla daar in op of de woorden 'zoet' en 'sappig' hetzelfde zijn                // geeft false wanneer gelogd
 // ==========================================
-
+const isIt3 = 'zoet' === 'sappig';
+console.log('Is zoet sappig?', isIt3);
 
 // ==========================================
 // 4a. Declareer een variabele en sla daar het rapportcijfer 9 in op.
 // 4b. schrijf een script dat checkt of het rapportcijfer groter is dan 8.
 //     Als dat zo is, loggen we 'Cum laude!' in de console.                                                     // geeft 'Cum laude!' wanneer gelogd
 // ==========================================
+const resultsExam = 9;
+const rapportCijfer = resultsExam >= 8;
+console.log('Cum Laude!', rapportCijfer);
 
+//Correct:
+const resultsExam2 = 8;
+if (resultsExam2 >= 8) {
+    console.log('Cum Laude!');
+}
 
 // ==========================================
 // 5a. Gebruik onderstaande variabelen isRaining en temperature;
@@ -35,4 +47,19 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 
 const isRaining = false;
-const temperature = 23;
+const temperature = 20;
+
+// const topWeather = ((isRaining == false) && (temperature >= 21));
+// console.log('Je kunt een korte broek aan!', topWeather);
+// break
+// default: console.log('Doe een jas aan!');
+
+// const warmEnough = true;
+
+if ((!isRaining) && (temperature >= 21)) {
+    console.log('Je kunt een korte broek aan!');
+}
+
+if (isRaining || temperature <21) {
+    console.log('Doe een jas aan!');
+}
